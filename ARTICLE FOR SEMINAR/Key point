@@ -1,0 +1,9 @@
+*Tổng quan: 
+- Giới thiệu ViSoBERT, mô hình ngôn ngữ tiền huấn luyện đơn ngữ đầu tiên cho văn bản Việt trên mạng xã hội.
+- Dựa trên kiến trúc XLM-R, mô hình trên được huấn luyện trên một tập dữ liệu quy mô lớn, chất lượng cao và đa dạng, thu thập từ các nền tảng phổ biến như Facebook, TikTok,...
+- Đánh giá ViSoBERT trên 5 tác vụ NLP quan trọng: Nhận diện cảm xúc (Emotion Recognition), Phát hiện ngôn từ thù ghét (Hate Speech Detection), Phân tích cảm xúc (Sentiment Analysis), Phát hiện đánh giá Spam (Spam Reviews Detection) và Xác định phạm vi ngôn từ thù ghét (Hate Speech Spans Detection).
+*Vấn đề:
+- Có tồn tại các mô hình Tiếng Việt như PhoBERT, viBERT, vELECTRA nhưng những mô hình kể trên được huấn luyện trên Wikipedia, các tin tức
+-> Nên không updata cho ngôn ngữ mạng xã hội (teencode, viết không dấu, emoji, slang,...)
+-> Hiệu quả kém trong các tác vụ NLP.
+*Nền tảng của các mô hình ngôn ngữ tiền huấn luyện cho các văn bản mạng 
