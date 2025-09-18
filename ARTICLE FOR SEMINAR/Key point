@@ -1,3 +1,4 @@
+
 *Tổng quan: 
 - Giới thiệu ViSoBERT, mô hình ngôn ngữ tiền huấn luyện đơn ngữ đầu tiên cho văn bản Việt trên mạng xã hội.
 - Dựa trên kiến trúc XLM-R, mô hình trên được huấn luyện trên một tập dữ liệu quy mô lớn, chất lượng cao và đa dạng, thu thập từ các nền tảng phổ biến như Facebook, TikTok,...
@@ -7,3 +8,43 @@
 -> Nên không updata cho ngôn ngữ mạng xã hội (teencode, viết không dấu, emoji, slang,...)
 -> Hiệu quả kém trong các tác vụ NLP.
 *Nền tảng của các mô hình ngôn ngữ tiền huấn luyện cho các văn bản mạng 
+- Mô hình pre-trained cho Tiếng Việt: 
++ PhoBERT
++ viBERT
++ vELECTRA
++ viBERT4news
++ BARTpho
++ ViT5
++ ViHealthBERT
+--> Được huấn luyện trên văn bản chính thống (Wiki, báo chí, y tế), không chuyên mạng xã hội.
+- Mô hình pre-trained cho văn bản mạng xã hội:
++ BERTweet
++ IndoBERTweet
++ RoBERTuito
++ TWiIBERT
++ Bernice
++ TwHIN-BERT
++ XLM-T
+--> Có nhiều mô hình social media cho Twitter (Anh, Indo, Tây Ban Nha, đa ngôn ngữ), nhưng Twitter ít phổ biến ở Việt Nam. Vì thế, các mô hình này không phù hợp cho văn bản mạng xã hội tiếng Việt (nơi Facebook, TikTok, YouTube mới là chủ đạo).
+--> Sự ra đời của ViSoBERT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*
