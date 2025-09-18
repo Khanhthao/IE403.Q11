@@ -27,24 +27,5 @@
 + XLM-T
 --> Có nhiều mô hình social media cho Twitter (Anh, Indo, Tây Ban Nha, đa ngôn ngữ), nhưng Twitter ít phổ biến ở Việt Nam. Vì thế, các mô hình này không phù hợp cho văn bản mạng xã hội tiếng Việt (nơi Facebook, TikTok, YouTube mới là chủ đạo).
 --> Sự ra đời của ViSoBERT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*
+* ViSoBERT:
+- Nguồn dữ liệu: Facebook, Tiktok, Youtube.
