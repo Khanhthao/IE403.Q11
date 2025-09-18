@@ -1,4 +1,3 @@
-
 *Tổng quan: 
 - Giới thiệu ViSoBERT, mô hình ngôn ngữ tiền huấn luyện đơn ngữ đầu tiên cho văn bản Việt trên mạng xã hội.
 - Dựa trên kiến trúc XLM-R, mô hình trên được huấn luyện trên một tập dữ liệu quy mô lớn, chất lượng cao và đa dạng, thu thập từ các nền tảng phổ biến như Facebook, TikTok,...
@@ -29,4 +28,23 @@
 --> Sự ra đời của ViSoBERT
 * ViSoBERT:
 - Nguồn dữ liệu: Facebook, Tiktok, Youtube.
-- Cách thu thập: Dùng API chính thức của từng nền tảng 
+- Cách thu thập: Dùng API chính thức của từng nền tảng (Graph API, TikTok Reasearch API, Youtube Data API).
+- Tiền xử lý:
++ Xóa text không chuẩn (link, @username, spam vô nghĩa).
++ Giữ lại emoji để mô hình học cảm xúc.
+- Kết quả: thu được ~1GB text chưa nén --> chỉ dùng cho mục đính nghiên cứu.
+* Model Architecture (Kiến trúc mô hình):
+- Dựa trên transformer - XLM-R.
+- Cấu hình: 12 layers (encoder), 12 self-attention heads, hidden size = 768, ~97M tham số.
+- Mục tiêu huấn luyện: Masked Language Modeling (MLM), giống BERT. 
+- So sánh: nhẹ hơn PhoBERT Large (370M tham số) --> dễ triển khai hơn.
+* Vietnamese Social Media Tokenizer (Tokenizer tùy chỉnh).
+- Lần đầu tiên xây dựng tokenizer riêng cho Tiếng Việt mạng xã hội. 
+- Công cụ: SentencePiece (không mất dữ liệu, xử lý tốt hơn Byte-Pair Encoding).
+- Ưu điểm:
++ Biểu diễn ngắn gọn hơn (ít subword hơn).
++ Giữ nguyên emoji và teencode như một đơn vị có nghĩa --> giúp mô hình hiểu ngữ cảnh.
+Ví dụ: Comment: d4y l4 vj du cko mot cau teencode
+- ViSoBERT: ["d", "4", "y", "l", "4", "vj", "du", "cko", "mot", "cau", "teen", "code"]
+- PhoBERT: ["d@@", "4@@", "y", "l@@", "4", "v@@", "j", "du", "ck@@", "o", "mo@@", "t", "ca@@", "u", "te@@", "en@@", "co@@", "de"].
+--> ViSoBERT ít bị tách vụn, giữ đúng ngữ nghĩa của teencode.
