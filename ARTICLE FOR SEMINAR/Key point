@@ -29,3 +29,4 @@
 --> Sự ra đời của ViSoBERT
 * ViSoBERT:
 - Nguồn dữ liệu: Facebook, Tiktok, Youtube.
+- Cách thu thập: Dùng API chính thức của từng nền tảng 
