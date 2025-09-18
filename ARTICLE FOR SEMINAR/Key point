@@ -48,3 +48,11 @@ Ví dụ: Comment: d4y l4 vj du cko mot cau teencode
 - ViSoBERT: ["d", "4", "y", "l", "4", "vj", "du", "cko", "mot", "cau", "teen", "code"]
 - PhoBERT: ["d@@", "4@@", "y", "l@@", "4", "v@@", "j", "du", "ck@@", "o", "mo@@", "t", "ca@@", "u", "te@@", "en@@", "co@@", "de"].
 --> ViSoBERT ít bị tách vụn, giữ đúng ngữ nghĩa của teencode.
+* Thí nghiệm và Kết quả:
+- Thiết lập thí nghiệm:
++ Huấn luyện: 
+. Batch size 128 (dùng gradient accumulation).
+. 1.2M steps, 12 epochs.
+. Máy: 2xRTX4090 (24GB).
+. Masking rate: 30%.
++ Fine-tuning:
