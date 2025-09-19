@@ -50,9 +50,19 @@ Ví dụ: Comment: d4y l4 vj du cko mot cau teencode
 --> ViSoBERT ít bị tách vụn, giữ đúng ngữ nghĩa của teencode.
 * Thí nghiệm và Kết quả:
 - Thiết lập thí nghiệm:
-+ Huấn luyện: 
-. Batch size 128 (dùng gradient accumulation).
-. 1.2M steps, 12 epochs.
-. Máy: 2xRTX4090 (24GB).
-. Masking rate: 30%.
-+ Fine-tuning:
++ Huấn luyện (Downstream tasks).
++ Baseline models: Monolingual language models, multilingual language models và multilingual social media language models.
+- Kết quả chính:
++ Nhiệm vụ nhận định cảm xúc (Emotion Recognition Task).
++ Nhiệm vụ nhận diện ngôn từ thù ghét (Hate Speech Detection Task).
++ Sentiment Analysis Task.
++ Spam Reviews Detection Task.
++ Hate Speech Spans Detection Task.
++ Multilingual social media PLMs.
+* Kết quả thống kê và thảo luận.
+* Kết luận và định hướng tương lai.
+* Phần mở rộng:
+- Demo ứng dụng thực tế.
+- Thêm case study: ứng dụng vào phát hiện bình luận toxic trong các livestream.
+- Phân tích ngôn ngữ đa phương thức (emoji, meme,...)
+- Thêm so sánh giữa PhoBERT, TwHIN-BERT và ViSoBERT.
